@@ -1,0 +1,12 @@
+<app-header></app-header>
+<main class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+  <div class="flex justify-start items-center mx-auto max-w-screen-xl">
+    <app-add></app-add>
+  </div>
+  <div class="flex flex-wrap justify-center content-center text-sm font-semibold m-12">
+
+    @for (link of links; track $index) {
+      <app-card [originalUrl]="link.originalUrl" [shortUrl]="link.shortUrl"></app-card>
+    }
+  </div>
+</main>

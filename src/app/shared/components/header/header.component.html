@@ -1,0 +1,36 @@
+<header>
+  <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+    <div
+      class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+    >
+      <a routerLink="/" class="flex items-center">
+        <img
+          src="https://res.cloudinary.com/dpfmihznr/image/upload/v1731064549/domilink/Logo-Domilink.jpg"
+          class="mr-3 h-6 sm:h-9"
+          alt="Flowbite Logo"
+        />
+        <span
+          class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+          >Domilink</span
+        >
+      </a>
+      <div class="flex items-center lg:order-2">
+        <i class="fas fa-user text-gray-800 dark:text-white"></i>
+
+        <p
+          routerLink="/login"
+          class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm pr-4 lg:pr-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800 ml-2"
+        >
+          {{ username() }}
+        </p>
+
+        <button
+          (click)="logout()"
+          class="text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 ml-2 dark:bg-red-500 dark:hover:bg-red-600 focus:outline-none dark:focus:ring-red-800"
+        >
+          Logout
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
